@@ -1,0 +1,10 @@
+1) Write two different queries that would produce all orders taken on October 3rd or 
+4th, 1990.
+select * from orders where odate ='1990-10-03' or odate='1990-10-
+04';
+ select * from orders where odate ='90-10-03' or odate='90-10-04';
+
+2) Write a query that selects all of the customers serviced by Peel or Motika.
+(Hint: the snum field relates the two tables to one another).
+ select * from customers where snum between 1001 and 1004 and snum
+ != 1002;
