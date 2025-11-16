@@ -50,7 +50,6 @@ mysql> select rating ,cname,cnum from customers order by rating desc;
 +--------+----------+------+
 
 4) Write a query that totals the orders for each day and places the results in descending order. 
-
 mysql> select odate,sum(amt)
     -> from orders
     -> group by odate
@@ -62,3 +61,4 @@ mysql> select odate,sum(amt)
 | 1990-10-05 |  4723.00 |
 | 1990-10-04 |  1788.98 |
 | 1990-10-03 |  8944.59 |
++------------+----------+
